@@ -3,17 +3,17 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Projects</title>
+    <title>Persons</title>
   </head>
   <body>
-    {% for project in projects %}
-    <h1>{{project.title}}</h1>
+    {% for person in persons %}
+    <h1>{{person.name}}</h1>
     {% comment %}
     <p>{{project.abstract}}</p>
     {% endcomment %}
-    <h3>Published Date: {{project.date}}</h3>
-    <h3>Location: {{project.location}}</h3>
-    <h3>{{project.number_of_members}}</h3>
+    <h3>Published Date: {{person.counrty}}</h3>
+    <h3>Location: {{person.city}}</h3>
+    <h3>{{person.lates_projects}}</h3>
     {% comment %} <img src="{{project.image}}" /> {% endcomment %} {% endfor %}
   </body>
 </html>
